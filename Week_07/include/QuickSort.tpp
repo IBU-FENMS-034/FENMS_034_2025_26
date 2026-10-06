@@ -4,6 +4,7 @@
 
 #pragma once
 #include <cstdlib>
+#include <stdexcept>
 
 template<typename Data>
 void QuickSort::quick_sort(Data *arr, int len) {
@@ -23,6 +24,7 @@ void QuickSort::sort(Data *arr, int low, int high) {
 template<typename Data>
 int QuickSort::partition(Data *arr, int low, int high) {
     // your code
+    throw std::logic_error("QuickSort::partition() is not implemented yet");
 }
 
 template<typename Data>

@@ -6,6 +6,7 @@
 
 #include <fstream>
 #include <vector>
+#include <stdexcept>
 
 Digraph::Digraph(int V) {
     // your code
@@ -25,6 +26,7 @@ Digraph::Digraph(const Digraph &src) {
 
 Digraph &Digraph::operator=(const Digraph &src) {
     // your code
+    throw std::logic_error("Digraph::operator=() is not implemented yet");
 }
 
 Digraph::Digraph(Digraph &&src) noexcept {
@@ -33,6 +35,7 @@ Digraph::Digraph(Digraph &&src) noexcept {
 
 Digraph &Digraph::operator=(Digraph &&src) noexcept {
     // your code
+    return *this;
 }
 
 void Digraph::add_edge(int u, int v) {
@@ -41,17 +44,21 @@ void Digraph::add_edge(int u, int v) {
 
 int Digraph::get_E() const {
     // your code
+    throw std::logic_error("Digraph::get_E() is not implemented yet");
 }
 
 int Digraph::get_V() const {
     // your code
+    throw std::logic_error("Digraph::get_V() is not implemented yet");
 }
 
 std::vector<int> &Digraph::get_adj(const int v) const {
     // your code
+    throw std::logic_error("Digraph::get_adj() is not implemented yet");
 }
 
 Digraph Digraph::reverse() const {
     // your code
+    throw std::logic_error("Digraph::reverse() is not implemented yet");
 }
 

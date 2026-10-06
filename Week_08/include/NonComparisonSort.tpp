@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include <stdexcept>
 
 template<typename Data>
 void NonComparisonSort::radix_sort(Data *arr, int len) {
@@ -23,4 +24,5 @@ void NonComparisonSort::counting_sort(Data *arr, int len) {
 template<typename Data>
 int NonComparisonSort::get_max(Data *arr, int len) {
     // your code
+    throw std::logic_error("NonComparisonSort::get_max() is not implemented yet");
 }

@@ -4,6 +4,7 @@
 
 #ifndef QUEUE_TPP
 #define QUEUE_TPP
+#include <stdexcept>
 
 template<typename Data>
 void Queue<Data>::enqueue(const Data& data) {
@@ -13,21 +14,25 @@ void Queue<Data>::enqueue(const Data& data) {
 template<typename Data>
 Data Queue<Data>::dequeue() {
     // your code
+    throw std::logic_error("Queue::dequeue() is not implemented yet");
 }
 
 template<typename Data>
 const Data &Queue<Data>::peek() const {
     // your code
+    throw std::logic_error("Queue::peek() is not implemented yet");
 }
 
 template<typename Data>
 bool Queue<Data>::is_empty() const {
     // your code
+    throw std::logic_error("Queue::is_empty() is not implemented yet");
 }
 
 template<typename Data>
 int Queue<Data>::size() const {
     // your code
+    throw std::logic_error("Queue::size() is not implemented yet");
 }
 
 template<typename Data>
@@ -53,6 +58,7 @@ Queue<Data>::Queue(const Queue &src) {
 template<typename Data>
 Queue<Data> &Queue<Data>::operator=(const Queue &src) {
     // your code
+    throw std::logic_error("Queue::operator=() is not implemented yet");
 }
 
 template<typename Data>
@@ -63,6 +69,7 @@ Queue<Data>::Queue(Queue &&src) noexcept {
 template<typename Data>
 Queue<Data> &Queue<Data>::operator=(Queue &&src) noexcept {
     // your code
+    return *this;
 }
 
 #endif //QUEUE_TPP
